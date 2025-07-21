@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi princesa Wolf</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .carta {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      animation: aparecer 2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    h1 {
+      color: #e75480;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .boton {
+      background-color: #e75480;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: latido 1.5s infinite;
+    }
+
+    .boton:hover {
+      background-color: #c73e6b;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <h1>Para mi princesa Wolf 💌</h1>
+    <p>
+      Sé que esto no es una carta común... pero tampoco tú eres una chica común.<br><br>
+      Desde que te conocí, algo dentro de mí se activó. Como si mi corazón hubiera compilado el código perfecto y tú fueras la salida más hermosa que podría imaginar.<br><br>
+      Me gustas. Así, sin filtros, sin loops infinitos... solo tú y esta declaración sincera.
+    </p>
+    <button class="boton" onclick="mostrarMensaje()">¿Quieres salir conmigo?</button>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      alert("💖 Espero que hayas dicho que sí, princesa 🥺");
+    }
+  </script>
+</body>
+</html>
